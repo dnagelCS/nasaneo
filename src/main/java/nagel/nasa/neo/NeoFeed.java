@@ -1,7 +1,6 @@
 package nagel.nasa.neo;
 
 import com.google.gson.annotations.SerializedName;
-
 import java.util.HashMap;
 import java.util.List;
 
@@ -17,5 +16,18 @@ public class NeoFeed {
         String nasaJpUrl;
         @SerializedName("is_potentially_hazardous_asteroid")
         boolean hazardous;
+        @SerializedName("close_approach_data")
+        List<CloseApproachData> closeApproachData;
+    }
+
+    class CloseApproachData {
+        @SerializedName("close_approach_data")
+        String closeApproachData;
+        @SerializedName("missDistance")
+        MissDistance missDistance;
+    }
+
+    class MissDistance {
+        double lunar;
     }
 }
