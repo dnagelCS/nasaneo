@@ -1,9 +1,7 @@
 package nagel.nasa.neo;
 
 import retrofit2.Call;
-import retrofit2.http.GET;
-import retrofit2.http.Path;
-import retrofit2.http.Query;
+import retrofit2.http.*;
 
 public interface NeoService {
 
@@ -13,4 +11,5 @@ public interface NeoService {
 
     @GET("/neo/rest/v1/neo/{id}?api_key=DEMO_KEY")
     Call<NeoFeed.NearEarthObject> getAsteroid(@Path("id") String id);
+
 }

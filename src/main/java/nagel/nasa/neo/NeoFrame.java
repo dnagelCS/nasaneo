@@ -18,7 +18,7 @@ public class NeoFrame extends JFrame {
         add(view, BorderLayout.CENTER);
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://api.nasa.gov")
+                .baseUrl("https://api.nasa.gov/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         NeoService service = retrofit.create(NeoService.class);

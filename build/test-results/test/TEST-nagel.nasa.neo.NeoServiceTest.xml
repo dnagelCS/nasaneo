@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nagel.nasa.neo.NeoServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-28T23:20:51" hostname="DESKTOP-E0BP45E" time="0.998">
-  <properties/>
-  <testcase name="getAsteroids" classname="nagel.nasa.neo.NeoServiceTest" time="0.998"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

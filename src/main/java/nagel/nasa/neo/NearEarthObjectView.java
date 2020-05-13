@@ -3,13 +3,14 @@ package nagel.nasa.neo;
 import javax.swing.*;
 import java.awt.*;
 
-//Display the NearEarthObject
-
+/**
+ * Display the NearEarthObject
+ */
 public class NearEarthObjectView extends JComponent {
 
     private NeoFeed.NearEarthObject neo;
 
-    public void setNearEarthObject(NeoFeed.NearEarthObject nearEarthObject) {
+    public void setNearEarthObject(NeoFeed.NearEarthObject neo) {
         this.neo = neo;
         repaint();
     }
@@ -22,21 +23,21 @@ public class NearEarthObjectView extends JComponent {
             return;
         }
 
-        //Earth
+        // Earth
         g.setColor(Color.BLUE);
-        g.fillOval(-100, 200, 100, 100);
+        g.fillOval(-50, 200, 100, 100);
 
-        //Asteroid
+        // Asteroid
         g.setColor(Color.RED);
-        g.fillOval(getWidth() - 10,200,10,10);
+        g.fillOval(getWidth()-10, 200, 10, 10);
 
-        double lunars = neo.closeApproachData.get(0).missDistance.lunar;
-        double uiDistance = getWidth() - 10;
+        double lunars = neo.closestLunarDistance();
+        double uiDistance = getWidth()-10;
         double moonX = uiDistance / lunars;
 
-        //Moon
+        // Moon
         g.setColor(Color.GRAY);
-        g.fillOval((int) moonX,200,25,25);
+        g.fillOval((int) moonX, 200, 25, 25);
     }
 
 }
