@@ -1,5 +1,7 @@
 package nagel.nasa.neo;
 
+import com.google.inject.Singleton;
+
 import javax.swing.*;
 import java.awt.*;
 
