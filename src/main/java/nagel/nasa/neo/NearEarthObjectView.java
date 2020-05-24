@@ -6,6 +6,7 @@ import java.awt.*;
 /**
  * Display the NearEarthObject
  */
+@Singleton
 public class NearEarthObjectView extends JComponent {
 
     private NeoFeed.NearEarthObject neo;

@@ -2,14 +2,7 @@ package nagel.nasa.neo;
 
 import org.junit.Test;
 import retrofit2.Call;
-import retrofit2.Callback;
 import retrofit2.Response;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
-import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 public class NeoControllerTest {

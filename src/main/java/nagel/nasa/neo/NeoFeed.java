@@ -40,5 +40,4 @@ public class NeoFeed {
     class MissDistance {
         double lunar;
     }
-
 }

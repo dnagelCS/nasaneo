@@ -2,9 +2,6 @@ package nagel.nasa.neo;
 
 import org.junit.Test;
 import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
-
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
@@ -16,11 +13,7 @@ public class NeoServiceTest {
     @Test
     public void getAsteroids() throws IOException {
         // given
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://api.nasa.gov/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-        NeoService service = retrofit.create(NeoService.class);
+        NeoService service = new NeoServiceFactory().getInstance();
 
         // when
         Response<NeoFeed> response = service.getAsteroids(
