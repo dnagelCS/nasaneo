@@ -10,6 +10,8 @@ This is a test application I wrote for MCO-152 to demonstrate:
 1. Mockito
 1. Model-View-Controller pattern
 1. Factory pattern
+1. Executable Jar Files
+1. Markdown
 
 This displays the [Near Earth Object](https://api.nasa.gov/) data from NASA.
 
