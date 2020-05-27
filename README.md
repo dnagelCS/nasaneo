@@ -15,5 +15,5 @@ This displays the [Near Earth Object](https://api.nasa.gov/) data from NASA.
 
 Download Executable [jar](build/libs/nasaneo-1.0-SNAPSHOT.jar)
 
-[Alt](screenshots/NeoFrame.png "Main Application Frame")
+![Alt](screenshots/NeoFrame.png "Main Application Frame")
 
